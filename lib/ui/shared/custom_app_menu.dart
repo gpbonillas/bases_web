@@ -13,7 +13,7 @@ class CustomAppMenu extends StatelessWidget {
         children: [
           CustomFlatButton(
             text: 'Contador Stateful',
-            onPressed: () {},
+            onPressed: () => Navigator.pushNamed(context, '/stateful'),
             color: Colors.black,
           ),
           SizedBox(
@@ -21,7 +21,7 @@ class CustomAppMenu extends StatelessWidget {
           ),
           CustomFlatButton(
             text: 'Contador Provider',
-            onPressed: () {},
+            onPressed: () => Navigator.pushNamed(context, '/provider'),
             color: Colors.black,
           ),
           SizedBox(
@@ -29,7 +29,7 @@ class CustomAppMenu extends StatelessWidget {
           ),
           CustomFlatButton(
             text: 'Otra página',
-            onPressed: () {},
+            onPressed: () => Navigator.pushNamed(context, '/abc123'),
             color: Colors.black,
           ),
         ],
